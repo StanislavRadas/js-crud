@@ -1,0 +1,95 @@
+body {
+  padding: 16px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
+  font-size: 32px;
+  font-weight: 400;
+  color: blue;
+  margin-bottom: 28px;
+}
+
+.form {
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px;
+  width: 640px;
+  box-shadow: 1px 2px 10px 2px #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form__description {
+  font-size: 20px;
+}
+
+.form__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form__product-name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product__label {
+  font-size: 12px;
+  color: #ddd;
+}
+
+.product__input {
+  border: 1px solid #ddd;
+  padding: 4px;
+  display: block;
+  width: 100%;
+}
+
+.form__product-price {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.description {
+  font-size: 12px;
+  color: #ddd;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form__textarea {
+  border: 1px solid #ddd;
+  padding: 4px;
+  max-height: 70px;
+  height: 100%;
+  resize: none;
+}
+
+.teaxtarea__add {
+  font-size: 8px;
+  color: #ddd;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */

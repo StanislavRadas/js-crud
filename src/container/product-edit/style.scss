@@ -1,0 +1,87 @@
+@use '../../lib/service.scss' as s;;
+
+.block__content {
+    padding: s.space(6);
+}
+
+.title__update {
+    font-size: s.space(8);
+    color: s.color('blueDark');
+    margin-bottom: s.space(6);
+}
+
+.form__update {
+    padding: s.space(5);
+    display: flex;
+    flex-direction: column;
+    gap: s.space(4);
+    max-width: 700px;
+    border-radius: s.space(2);
+    box-shadow: 1px 2px 10px 2px s.color('light');
+}
+
+.title__form {
+    font-size: s.space(6);
+}
+
+.data__product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: s.space(3);
+}
+
+.update__label {
+    font-size: s.space(3);
+    color: s.color('light');
+}
+
+.update__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.update__input {
+    border: 1px solid s.color('light'); 
+    border-radius: s.space(1);
+    padding: s.space(1);
+}
+
+.product__description {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(1);
+}
+
+.label__description {
+    font-size: s.space(3);
+    color: s.color('light');
+}
+
+.label__input {
+    border: 1px solid s.color('light'); 
+    border-radius: s.space(1);
+    padding: s.space(1);
+    height: 80px;
+}
+
+.form__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: s.space(2);
+}
+
+.save {
+    background-color: s.color('blueDark');
+    padding: s.space(2);
+    border-radius: s.space(1);
+    color: s.color('whiteLight');
+    text-align: center;
+}
+
+.delete {
+    background-color: red;
+    padding: s.space(2);
+    border-radius: s.space(1);
+    color: s.color('whiteLight');
+    text-align: center;
+}
