@@ -225,5 +225,4 @@ router.get('/product-delete', function (req, res) {
 })
 // ================================================================
 
-// Підключаємо роутер до бек-енду
 module.exports = router
