@@ -1,0 +1,87 @@
+.block__content {
+  padding: 24px;
+}
+
+.title__update {
+  font-size: 32px;
+  color: blue;
+  margin-bottom: 24px;
+}
+
+.form__update {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 10px 2px #ddd;
+}
+
+.title__form {
+  font-size: 24px;
+}
+
+.data__product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.update__label {
+  font-size: 12px;
+  color: #ddd;
+}
+
+.update__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.update__input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label__description {
+  font-size: 12px;
+  color: #ddd;
+}
+
+.label__input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  height: 80px;
+}
+
+.form__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.save {
+  background-color: blue;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.delete {
+  background-color: red;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

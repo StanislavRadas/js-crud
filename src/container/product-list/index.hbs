@@ -1,0 +1,19 @@
+<div class="content__block">
+  <h2 class="list__title">List of the Products</h2>
+  {{#with data.product}}
+    {{#if isEmpty}}
+    <mark>List is Empty</mark>
+    {{else}}
+    {{#each list}}
+      <div class="card">
+        <h2 class="product__title">{{name}}</h2>
+        <p class="product__description">{{description}}</p>
+        <p class="product__id">{{id}}</p>
+        <div class="footer__block">
+          <p class="product__price">{{price}}</p>
+          <a href="/product-edit?id={{id}}" class="product__update">Update</a>
+        </div>
+      </div>
+    {{/each}}
+    {{/if}}
+  {{/with}}

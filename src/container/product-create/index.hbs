@@ -1,0 +1,26 @@
+<main class="main">
+    <section class="section">
+        <h1 class="form__title">Make a product</h1>
+        <form method="POST" action="/product-create" class="form">
+        <h2 class="form__description">Information about product</h2>
+            <div class="form__fields">
+                <div class="form__product-name">
+                    <label for="name" class="product__label">Product name</label>
+                    <input type="text" class="product__input" name="name">
+                </div>
+                <div class="form__product-price">
+                    <label for="price" class="product__label">Price</label>
+                    <input type="text" class="product__input" name="price">
+                </div>
+            </div>
+            <div class="textarea">
+                <label for="description" class="description">Short product description</label>
+                <textarea name="description" id="" cols="30" rows="10" class="form__textarea"></textarea>
+                <p class="teaxtarea__add">Show in card product</p>
+            </div>
+            <div class="field__button">
+                <button class="button" type="submit">Make a product</button>
+            </div>
+        </form>
+    </section>
+</main>

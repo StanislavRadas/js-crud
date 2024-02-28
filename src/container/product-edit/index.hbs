@@ -1,0 +1,33 @@
+{{#with data}}
+<div class="block__content">
+  <h2 class="title__update">Product update</h2>
+    <div class="update__block">
+        <form class="form__update" method="POST" action="/product-edit">
+          <h3 class="title__form">Information about product</h3>
+          <div class="data__product">
+            <div class="update__field">
+              <label for="name" class="update__label">Name</label>
+              <input type="text" class="update__input" name="name" placeholder="{{product.name}}">
+            </div>
+            <div class="update__field">
+              <label for="price" class="update__label">Price</label>
+              <input type="text" class="update__input" name="price" placeholder="{{product.price}}">
+            </div>
+            <div class="update__field">
+              <label for="id" class="update__label">ID</label>
+              <input type="text" class="update__input" name="id" placeholder="{{product.id}}">
+            </div>
+          </div>
+          <div class="product__description">
+            <label for="description" class="label__description">Description</label>
+            <input type="text" name="description" class="label__input" placeholder="{{product.description}}">
+            <p class="text__description">Show in card product</p>
+          </div>
+          <div class="form__buttons">
+            <button class="save">Save</button>
+            <a href="/product-delete?id={{product.id}}" class="delete">Delete</a>
+          </div>
+        </form>
+    </div>
+</div>
+{{/with}}
