@@ -1,0 +1,29 @@
+{{#with data}}
+<div>
+  <h1>Order information</h1>
+</div>
+<div>
+  <p>ID:{{product.id}}</p>
+</div>
+<hr>
+<div>
+  <p>Name:{{product.firstname}}</p>
+  <p>Phone:{{product.phone}}</p>
+  <p>Surname:{{product.lastname}}</p>
+  <p>Email:{{product.email}}</p>
+</div>
+<hr>
+<div>
+  <p>Product name:{{product.product.title}}</p>
+  <p>Comment{{product.comment}}</p>
+</div>
+<hr>
+<div>
+  <p>Price:{{product.productPrice}}</p>
+  <p>Total price:{{product.totalPrice}}</p>
+  <p>Delivery price:{{product.deliveryPrice}}</p>
+  <p>Bonus:{{product.bonus}}</p>
+</div>
+<hr>
+<a href="/purchase-edit?id={{product.id}}" class="btn btn-primary">Edit information</a>
+{{/with}}

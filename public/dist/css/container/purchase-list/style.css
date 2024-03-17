@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  gap: 300px;
+}
+
+.item {
+  display: flex;
+  gap: 300px;
+  padding: 0 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

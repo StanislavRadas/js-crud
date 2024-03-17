@@ -1,0 +1,46 @@
+
+{{#with data}}
+<div>
+  <div>
+    <form method="POST" action="/purchase-create?id={{product.id}}">
+      <div class="card" style="width: 18rem;">
+        <img src="{{product.img}}" class="card-img-top" alt="Photo">
+        <div class="card-body">
+          <h5 class="card-title">{{product.title}}</h5>
+          <p class="card-text">{{product.description}}
+          </p>
+          {{#each category}}
+          <span class="badge text-bg-primary">{{product.text}}</span>
+          {{/each}}
+          <hr>
+          <label for="amount">Count:</label>
+          <input name="amount" value="1">
+          <div>
+            <button class="btn btn-primary">Купити зараз: {{product.price}}</button>
+          </div>
+    </form>
+  </div>
+</div>
+<div>
+  <h1>Other Products</h1>
+  <p>Computers and Laptops</p>
+</div>
+<div class="d-flex p-2 justify-content-between">
+  {{#each list}}
+  <div class="card" style="width: 18rem;">
+    <img src="{{img}}" class="card-img-top" alt="Photo">
+    <div class="card-body">
+      <h5 class="card-title">{{title}}</h5>
+      <p class="card-text">{{description}}
+      </p>
+      {{#each category}}
+      <span class="badge text-bg-primary">{{text}}</span>
+      {{/each}}
+      <div>
+        <a href="/purchase-product?id={{id}}" class="btn btn-primary">Купити зараз: {{price}}</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+  {{/with}}
+</div>

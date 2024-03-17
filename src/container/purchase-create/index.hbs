@@ -1,0 +1,40 @@
+<main>
+  {{#with data}}
+    <form method="POST" action="/purchase-submit?id={{id}}">
+      <h1>Your Order</h1>
+      <ul>
+        {{#each cart}}
+          <li>
+            <span>{{text}}:</span>
+            <span>{{price}}</span>
+          </li>
+        {{/each}}
+      </ul>
+      <hr>
+      <h2>Order Form</h2>
+      <label for="firstname">Name</label>
+      <input name="firstname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      <label for="lastname">Lastname</label>
+      <input name="lastname" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+      <label for="email">Email</label>
+      <input name="email" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+      <label for="phone">Phone</label>
+      <input name="phone" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+      <label for="comment">Comment</label>
+      <input name="comment" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+      <label for="bonus">Bonus</label>
+      <input name="bonus" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+      <label for="promocode">Promocode</label>
+      <input name="promocode" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+      <hr>
+      <strong>Total: {{totalPrice}} UAH ({{bonus}} UAH)</strong>
+      <button class="btn btn-primary">Make Order</button>
+    </form>
+  {{/with}}
+</main>

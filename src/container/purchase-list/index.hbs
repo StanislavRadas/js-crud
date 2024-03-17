@@ -1,0 +1,25 @@
+<h1>My Orders</h1>
+<div>
+  <ul class="header">
+    <li>ID</li>
+    <li>Product</li>
+    <li>Sum</li>
+    <li>Bonus</li>
+  </ul>
+</div>
+<hr>
+{{#with data}}
+{{#each list}}
+<div>
+  <a href="/purchase-data?id={{id}}">
+    <div class="item">
+      <p>{{id}}</p>
+      <p>{{product.title}}</p>
+      <p>{{totalPrice}}</p>
+      <p>{{bonus}}</p>
+    </div>
+  </a>
+</div>
+{{/each}}
+{{/with}}
+<hr>

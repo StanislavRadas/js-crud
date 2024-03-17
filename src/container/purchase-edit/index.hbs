@@ -1,0 +1,28 @@
+{{#with data}}
+<form method="POST" action="/purchase-edit">
+<div>
+  <h1>Edit information</h1>
+</div>
+<div>
+  <input type="hidden" name="id" value="{{product.id}}">
+  <p>ID:{{product.id}}</p>
+</div>
+<hr>
+<div>
+  <label for="lastname">Surname</label>
+  <input name="lastname" placeholder="{{product.lastname}}" class="form-control" aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default">
+  <label for="firstname">Name</label>
+  <input name="firstname" placeholder="{{product.firstname}}" class="form-control" aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default">
+  <label for="email">Email</label>
+  <input name="email" placeholder="{{product.email}}" class="form-control" aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default">
+  <label for="phone">Phone</label>
+  <input name="phone" placeholder="{{product.phone}}" class="form-control" aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default">
+</div>
+<hr>
+<button class="btn btn-primary">Edit information</button>
+</form>
+{{/with}}
