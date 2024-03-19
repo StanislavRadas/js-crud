@@ -1,0 +1,63 @@
+.main {
+  padding: 36px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #292929;
+  padding: 12px 36px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.input {
+  width: 385px;
+}
+
+.button {
+  font-size: 28px;
+  color: white;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.name {
+  font-size: 24px;
+  color: white;
+}
+
+.amount {
+  font-size: 16px;
+  color: #BDBDBD;
+}
+
+/*# sourceMappingURL=style.css.map */

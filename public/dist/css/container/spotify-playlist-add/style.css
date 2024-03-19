@@ -1,0 +1,72 @@
+.main {
+  padding: 36px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.title__text {
+  font-size: 28px;
+  color: #FFFEFE;
+}
+
+.content__list {
+  padding: 32px 24px;
+  width: 100%;
+  background-color: #282828;
+  border-radius: 4px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.text__item {
+  font-size: 24px;
+  color: #FFFEFE;
+  align-self: center;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.name {
+  font-size: 24px;
+  color: white;
+}
+
+.author {
+  font-size: 16px;
+  color: #BABABA;
+}
+
+.add:hover {
+  opacity: 0.7;
+  transition-duration: 0.7s;
+}
+.add:focus {
+  opacity: 0.7;
+  transition-duration: 0.7s;
+}
+
+/*# sourceMappingURL=style.css.map */

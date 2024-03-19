@@ -1,0 +1,24 @@
+<main class="main">
+    <a href="/" class="return">
+        <div>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.3334 33.3334L6.66675 6.66669M33.3334 6.66669L6.66675 33.3334" stroke="white" stroke-width="3.33333"
+                    stroke-linecap="round" />
+            </svg>
+        </div>
+    </a>
+    <div class="content">
+        <div class="content__title">
+            <p class="title__text">Назвіть плейліст</p>
+        </div>
+        <form class="form" method="POST" action="/spotify-create{{#if data.isMix}}?isMix=true{{/if}}">
+            <div class="content__form">
+                <label for="name"></label>
+                <input required type="text" name="name" class="input" placeholder="Мій плейліст">
+            </div>
+            <div class="form__button">
+                <button class="button">Створити</button>
+            </div>
+        </form>
+    </div>
+</main>

@@ -1,0 +1,32 @@
+{{#with data}}
+<main class="main">
+    <div class="content">
+        <div class="content__title">
+            <h2 class="title__text">Додати до плейліста</h2>
+        </div>
+        <div class="content__list">
+            <ul class="list">
+                {{#each tracks}}
+                <li class="list__item">
+                    <div class="card">
+                        <div><img src="{{image}}" alt="photo"></div>
+                        <div>
+                            <p class="name">{{name}}</p>
+                            <p class="author">{{author}}</p>
+                        </div>
+                    </div>
+                    <a href="/spotify-track-add?playlistId={{../playlistId}}&trackId={{id}}" class="add">
+                        <div>
+                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 14V28M14 21H28" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="21" cy="21" r="20" stroke="#BABABA" stroke-width="2" />
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</main>
+{{/with}}

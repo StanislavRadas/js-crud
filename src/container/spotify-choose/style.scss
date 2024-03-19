@@ -1,0 +1,79 @@
+@use '../../lib/service.scss' as s;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: s.space(9);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: s.space(15)
+}
+
+.title__text {
+    font-size: s.space(6);
+    color: s.color('lightWhite');
+}
+
+.playlist__block { 
+    display: flex;
+    flex-direction: column;
+    gap: s.space(7);
+}
+
+.playlist__create {
+    display: flex;
+    gap: s.space(6);
+}
+
+.create__text {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(4);
+}
+
+.create__title {
+    font-size: s.space(6);
+    color: s.color('lightWhite');
+}
+
+.create__description {
+    font-size: s.space(4);
+    color: s.color('lightWhite');
+}
+
+.playlist__shuffle {
+    display: flex;
+    gap: s.space(6);
+}
+
+.shuffle__text {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(4);
+}
+
+.shuffle__title {
+    font-size: s.space(6);
+    color: s.color('lightWhite');
+}
+
+.shuffle__description {
+    font-size: s.space(4);
+    color: s.color('lightWhite');
+}
+
+.link {
+    &:hover {
+        opacity: 0.7;
+        transition-duration: 0.7s;
+    }
+    &:focus {
+        opacity: 0.7;
+        transition-duration: 0.7s;
+    }
+}
